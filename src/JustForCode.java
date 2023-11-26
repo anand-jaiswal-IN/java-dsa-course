@@ -1,19 +1,14 @@
 public class JustForCode {
     public static void main(String[] args) {
-
-        int[] arr = {7,8,9,11,12};
-        System.out.println(firstMissingPositive(arr));
-
-    }
-    public static int firstMissingPositive(int[] nums) {
-        int i = 1;
-        while(true) {
-            for (int j = 0; j < nums.length; j++) {
-                if(i==nums[j]) break;
-                if (j==nums.length-1) return i;
+        int n = 100;
+        int k = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= k; j++) {
+                System.out.print(j + " ");
             }
-            i++;
+            System.out.println();
+            i = i + k;
+            System.out.println(i);
         }
-        
     }
 }
